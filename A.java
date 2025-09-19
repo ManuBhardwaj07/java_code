@@ -1,27 +1,10 @@
-class A{
+class A {
     public static void main(String[] args) {
-        B x = new B();
-        x.bbb();
+        A1 a = new A1();
+         System.out.println( a.y);  //Access through instentiaion 
     }
+    
 }
-
-class B{
-    void bbb() {
-        C x = new C();
-        x.ccc();
-    }
-}
-
-class C {
-    void ccc() {
-        D x = new D();
-        x.ddd();
-    }
-
-}
-
-class D {
-    void ddd() {
-        System.out.println(" I'm Manu Bhardwaj");
-    }
+class A1{
+    int y = 25;
 }

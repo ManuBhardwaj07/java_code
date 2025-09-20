@@ -1,4 +1,4 @@
-class Student2 {
+   class  Student2 {
     String name;
     int age;
     static int maxAge = 20;

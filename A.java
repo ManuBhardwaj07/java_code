@@ -1,10 +1,13 @@
+import java.lang.*;
 class A {
-    public static void main(String[] args) {
-        A1 a = new A1();
-         System.out.println( a.y);  //Access through instentiaion 
+   static String a = "Manu";
+    static Integer b = 20;
+   static float c = 2.5f;
+    public static void main(String[] args){
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
     }
-    
-}
-class A1{
-    int y = 25;
 }

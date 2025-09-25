@@ -1,9 +1,18 @@
+import java.io.File;
+import java.text.DateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
 class B {
-public static void main(String[] args) {
-    B1 b = new B1();
-     System.out.println(B1.y);
-}
-}
-class B1{
-    static int y = 50;
+    static File a;
+    static Date b;
+    static DateFormat c;
+    static ArrayList d;
+
+    public static void main(String[] args) {
+        System.out.println(a);  
+        System.out.println(b);  
+        System.out.println(c);  
+        System.out.println(d);  
+    }
 }

@@ -1,10 +1,10 @@
-class C extends C1 {
-    public static void main(String[] args) {
-        C a = new C();
-         System.out.println(a.y);  //Access through instentiaion
-    }
+import java.util.Date;
+// import java.sql.Date;
 
- }
-class C1{
-    int y = 100;
-}
+class C {
+    public static void main(String[] args) {
+        Date x;  // java.util.Date
+        java.sql.Date y;
+        System.out.println("java.util.Date: " + new Date());
+    }
+} 

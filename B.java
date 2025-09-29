@@ -1,18 +1,33 @@
-import java.io.File;
-import java.text.DateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-
-class B {
-    static File a;
-    static Date b;
-    static DateFormat c;
-    static ArrayList d;
-
+class B1 { 
     public static void main(String[] args) {
-        System.out.println(a);  
-        System.out.println(b);  
-        System.out.println(c);  
-        System.out.println(d);  
+        B obj = new B();
+        obj.pro();
+        obj.info();
+        obj.display();
+    }
+    void pro() {
+        System.out.println("pro() in Parent B1");
+    }
+
+    final void info() {
+        System.out.println("info() in Parent B1");
+    }
+    void display(){
+        System.out.println("display() I'm Mohit bhardwaj");
+    }
+}
+
+
+class B extends B1 {
+    void pro() {
+        System.out.println("pro() in Child class B");
+    }
+
+    // void info() {
+    //     System.out.println("info() in Child class D");
+    // }
+
+    void display(){
+        System.out.println("display() I'm Manu bhardwaj");
     }
 }

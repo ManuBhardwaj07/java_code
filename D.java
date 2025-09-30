@@ -1,13 +1,17 @@
+final class D1 {
+        int y = 50;
+      D1 () {
+            System.out.println("Constructor of D1");
+        }
+}
+
 class D {
     public static void main(String[] args) {
-        D1 a = new D1();
-        a.pro(); //Access through instentiaion
-        //D1.pro();  // not ok
+        D1 x = new D1();
     }
-    
-}
-class D1 {
-    void pro (){
-        System.out.println("Namaste ");
+    void pro() {
+        D1 obj = new D1();
+        System.out.println(obj.y);
     }
 }
+  

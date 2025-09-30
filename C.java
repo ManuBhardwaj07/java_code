@@ -1,10 +1,14 @@
-import java.util.Date;
-// import java.sql.Date;
-
 class C {
-    public static void main(String[] args) {
-        Date x;  // java.util.Date
-        java.sql.Date y;
-        System.out.println("java.util.Date: " + new Date());
+     final int y;
+        C() {
+            y = 10;
+        }
+public static void main(String[] args) {
+        C obj = new C();
+        obj.pro();
     }
-} 
+    void pro() {
+        System.out.println(y);
+       
+    }
+}

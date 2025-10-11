@@ -1,10 +1,11 @@
-class H { 
+class H {
+    int x;
+    int y = 9;
+    
     public static void main(String[] args) {
-        H1 a = new H1();
+        H a = new H();
 
+        System.out.println(a.x);
         System.out.println(a.y);
     }
-}
-class H1 {
-    int y = 200 ;
 }

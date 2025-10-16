@@ -1,33 +1,18 @@
-class B1 { 
-    public static void main(String[] args) {
-        B obj = new B();
-        obj.pro();
-        obj.info();
-        obj.display();
-    }
-    void pro() {
-        System.out.println("pro() in Parent B1");
-    }
+abstract class B2 {
+    abstract void pro();
+}
 
-    final void info() {
-        System.out.println("info() in Parent B1");
-    }
-    void display(){
-        System.out.println("display() I'm Mohit bhardwaj");
+class B1 extends B2 {
+    void pro() {
+        System.out.println("Namaskar");
     }
 }
 
+class B {
+    public static void main(String[] args) {
+        //  I2 a = new I2();
 
-class B extends B1 {
-    void pro() {
-        System.out.println("pro() in Child class B");
-    }
-
-    // void info() {
-    //     System.out.println("info() in Child class D");
-    // }
-
-    void display(){
-        System.out.println("display() I'm Manu bhardwaj");
+        B1 a = new B1();
+        a.pro();
     }
 }

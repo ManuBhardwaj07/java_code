@@ -1,31 +1,14 @@
-class A1 {
+class A {
+    // method definition
+    void pro() {
+        System.out.println("Hello");
+    }    
+    
     public static void main(String[] args) {
-        A obj = new A();
-        obj.pro();
-        obj.info();
-        obj.abc(); 
-    }
-    void pro() {
-        System.out.println("pro() in Parent C1");
-    }
+        // new A1().pro();
 
-    void info() {
-        System.out.println("info() in Parent C1");
-    }
-    void abc(){
-        System.out.println("abc() in Parent C1");
-    }
-}
-
-class A extends A1 {
-    void pro() {
-        System.out.println("pro() in Child class C");
-    }
-
-    void info() {
-        System.out.println("info() in Child class C");
-    }
-     void abc(){
-        System.out.println("abc() in child class C1");
+        A x = new A();
+        // method call...
+        x.pro();
     }
 }

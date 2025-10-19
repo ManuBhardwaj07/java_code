@@ -1,14 +1,20 @@
-class C {
-     final int y;
-        C() {
-            y = 10;
-        }
-public static void main(String[] args) {
-        C obj = new C();
-        obj.pro();
+// import java.lang.*;
+
+class C /* extends Object */ {
+    
+    /* 
+    C() {
+        
     }
-    void pro() {
-        System.out.println(y);
-       
-    }
+    */
+
+    public static void main(String[] args) {
+        C x = new C();
+
+        // x.golu();
+
+        System.out.println(x.toString());
+
+        System.out.println(x.hashCode());
+    }    
 }

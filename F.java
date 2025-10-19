@@ -1,17 +1,29 @@
-final class F1 {
-    int y = 99;
-
-    void pro() {
-        System.out.println("Hi");
-    }
+interface LivingBeing {
 }
 
-class F {
+class Animal implements LivingBeing {
+}
+
+class Dog extends Animal {
+}
+
+class BDog extends Dog {
+}
+
+class Cat extends Animal {
+}
+
+public class F {
     public static void main(String[] args) {
-        F1 a = new F1();
+        BDog x = new BDog();
 
-        System.out.println(a.y);
+        System.out.println(x instanceof BDog);       // true
+        System.out.println(x instanceof Dog);        // true
+        System.out.println(x instanceof Animal);     // true
+        System.out.println(x instanceof LivingBeing);// true
+        System.out.println(x instanceof Object);     // true
 
-        a.pro();
-    }
+        // Uncommenting below line will cause a compile-time error if Cat is unrelated
+        // System.out.println(x instanceof Cat);
+    }    
 }

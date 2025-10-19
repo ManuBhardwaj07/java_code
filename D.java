@@ -1,17 +1,23 @@
-final class D1 {
-        int y = 50;
-      D1 () {
-            System.out.println("Constructor of D1");
-        }
+class D1 {
+    void mno() {
+        System.out.println("Trump");
+    }
 }
 
-class D {
+class D extends D1 {
+    void abc() {
+        System.out.println("Manu Bhardwaj");
+    }   
+    
     public static void main(String[] args) {
-        D1 x = new D1();
-    }
-    void pro() {
-        D1 obj = new D1();
-        System.out.println(obj.y);
+        D x = new D();
+
+        x.abc();
+
+        x.mno();
+
+        System.out.println(x.toString());
+
+        System.out.println(x.hashCode());
     }
 }
-  

@@ -1,27 +1,33 @@
-class AA {
-    void walk() {
-        System.out.println("I can Walk");
-    }
-}
-
-class BB extends AA {
-    void talk() {
-        System.out.println("I can Talk");
-    }
-}
-
-class CC extends BB {
-    void laugh() {
-        System.out.println("I can Laugh");
-    }
-}
-
-class G extends CC {
+class G {
     public static void main(String[] args) {
-        G x = new G();   // Object of G, inherits everything
-
-        x.walk();   // from AA
-        x.talk();   // from BB
-        x.laugh();  // from CC
+        Integer c = new Integer(14);
+        Long d = new Long(15);
+        Float e = new Float(16);
+        
+        process(c);
+        process(d);
+        process(e);
+    }   
+    
+    static void process(Number var) {
+        System.out.println(var);
+        System.out.println(var.toString());
+        System.out.println("--------------");
+        //some numeric operations...
     }
+
+    // static void process(Integer var) {
+    //     System.out.println("process(Integer)");
+    //     //some numeric operations...
+    // }
+    
+    // static void process(Float var) {
+    //     System.out.println("process(Float)");
+    //     //some numeric operations...
+    // }
+    
+    // static void process(Long var) {
+    //     System.out.println("process(Long)");
+    //     //some numeric operations...
+    // }
 }

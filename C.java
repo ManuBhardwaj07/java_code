@@ -1,20 +1,16 @@
-// import java.lang.*;
+class C1 {
 
-class C /* extends Object */ {
-    
-    /* 
-    C() {
-        
-    }
-    */
+}
 
+class C2 {
+
+}
+
+class C {
     public static void main(String[] args) {
-        C x = new C();
+        Object a = new C();
+        Object b = new C1();
+        Object c = new C2();
 
-        // x.golu();
-
-        System.out.println(x.toString());
-
-        System.out.println(x.hashCode());
-    }    
+    }
 }

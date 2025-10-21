@@ -1,19 +1,18 @@
-interface B1 {
-
+class B1 {
+    void pro() {
+        System.out.println("pro() in Parent class B1");
+    }
 }
 
-class B2 {
+class B extends B1 {
+    // method overloading (different parameter list)
+    void pro(int x) {
+        System.out.println("pro(int x) in Child class B");
+    }
 
-}
-
-class B extends B2 implements B1 {
     public static void main(String[] args) {
-        B a = new B();
-        B2 b = new B();
-        B1 c = new B();
-
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
+        B obj = new B();
+        obj.pro();      // calls parent class method
+        obj.pro(10);    // calls overloaded method in child
     }
 }

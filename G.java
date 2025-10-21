@@ -1,33 +1,22 @@
-class G {
-    public static void main(String[] args) {
-        Integer c = new Integer(14);
-        Long d = new Long(15);
-        Float e = new Float(16);
-        
-        process(c);
-        process(d);
-        process(e);
-    }   
-    
-    static void process(Number var) {
-        System.out.println(var);
-        System.out.println(var.toString());
-        System.out.println("--------------");
-        //some numeric operations...
+class G1 {
+    static void pro() {
+        System.out.println("Yamraj");
     }
+}
 
-    // static void process(Integer var) {
-    //     System.out.println("process(Integer)");
-    //     //some numeric operations...
-    // }
+class G extends G1 {
+    static void pro() {
+        System.out.println("Dharamraj");
+    }
     
-    // static void process(Float var) {
-    //     System.out.println("process(Float)");
-    //     //some numeric operations...
-    // }
-    
-    // static void process(Long var) {
-    //     System.out.println("process(Long)");
-    //     //some numeric operations...
-    // }
+    public static void main(String[] args) {
+        // G1 x = new G1();
+        // x.pro();
+
+        // G x = new G();
+        // x.pro();
+
+        G1 x = new G();
+        x.pro();
+    }    
 }

@@ -1,15 +1,37 @@
-final class E1 {
-    static int y = 2;
-
-    static void pro() {
-        System.out.println("Hello");
-    }
+// Base class
+class SuperHuman {
+    // common properties or methods can be added here
 }
 
-class E {
-    public static void main(String[] args) {
-        System.out.println(E1.y);
+// Subclasses
+class SpiderMan extends SuperHuman {
+}
 
-        E1.pro();
+class ShaktiMan extends SuperHuman {
+}
+
+class SuperMan extends SuperHuman {
+}
+
+// Main class renamed to E
+class E {
+    static void inviteForLunch(SuperHuman a) {
+        System.out.println("---- step-1");
+        System.out.println("---- step-2");
+        System.out.println("---- step-3");
+        System.out.println("---- step-4");
+        System.out.println("---- step-5");
+        System.out.println("**********************");
     }
+
+    public static void main(String[] args) {
+        SpiderMan x = new SpiderMan();
+        inviteForLunch(x);
+
+        ShaktiMan y = new ShaktiMan();
+        inviteForLunch(y);
+
+        SuperMan z = new SuperMan();
+        inviteForLunch(z);
+    }    
 }

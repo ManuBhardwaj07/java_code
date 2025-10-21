@@ -1,28 +1,53 @@
-// Base class
-class Vehicle {
-    // Vehicle properties or methods (optional)
+// Superhero classes
+class SpiderMan {
+    // you can add more features later
 }
 
-// Car inherits from Vehicle
-class Car extends Vehicle {
-    // Car properties or methods (optional)
+class ShaktiMan {
+    // you can add more features later
 }
 
-// SportsCar inherits from Car
-class SportsCar extends Car {
-    // SportsCar properties or methods (optional)
+class SuperMan {
+    // you can add more features later
 }
 
-// First main class
+// Main class with overloaded methods
 class H {
-    public static void main(String[] args) {
-        SportsCar x = new SportsCar();
+    static void inviteForLunch(SpiderMan a) {
+        System.out.println("---- step-1");
+        System.out.println("---- step-2");
+        System.out.println("---- step-3");
+        System.out.println("---- step-4");
+        System.out.println("---- step-5");
+        System.out.println("**********************");
+    }
 
-        System.out.println(x instanceof SportsCar); // true
-        System.out.println(x instanceof Car);       // true
-        System.out.println(x instanceof Vehicle);   // true
-        System.out.println(x instanceof Object);    // true
+    static void inviteForLunch(ShaktiMan x) {
+        System.out.println("---- step-1");
+        System.out.println("---- step-2");
+        System.out.println("---- step-3");
+        System.out.println("---- step-4");
+        System.out.println("---- step-5");
+        System.out.println("***********----***********");
+    }
+
+    static void inviteForLunch(SuperMan x) {
+        System.out.println("---- step-1");
+        System.out.println("---- step-2");
+        System.out.println("---- step-3");
+        System.out.println("---- step-4");
+        System.out.println("---- step-5");       
+        System.out.println("***********^^^^***********");
+    }
+
+    public static void main(String[] args) {
+        SpiderMan x = new SpiderMan();
+        inviteForLunch(x);
+
+        ShaktiMan y = new ShaktiMan();
+        inviteForLunch(y);
+
+        SuperMan z = new SuperMan();
+        inviteForLunch(z);
     }    
 }
-
-

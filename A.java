@@ -1,17 +1,15 @@
-class A1 {
+class A {
     void pro() {
-        System.out.println("pro() in Parent class A1");
+        System.out.println("Hello");
     }
-}
 
-class A extends A1 {
-    // method overriding
-    void pro() {
-        System.out.println("pro() in Child class A");
+    void pro(String msg) {    // different parameter → overloading
+        System.out.println("Hi " + msg +"manu bhardwaj");
     }
 
     public static void main(String[] args) {
-        A obj = new A();      // create object of child class
-        obj.pro();            // calls overridden method in child
+        A obj = new A();
+        obj.pro();             // calls pro() without parameter
+        obj.pro("there");      // calls overloaded pro(String)
     }
 }

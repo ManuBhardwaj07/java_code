@@ -1,11 +1,10 @@
 class O {
     public static void main(String[] args) {
-        Vehicle x = new Vehicle();
+        // Java does not support operator overloading
 
-        if(x instanceof SportsCar) {
-            System.out.println("Vehicle IS-A SportsCar");
-        } else {
-            System.out.println("Vehicle IS-NOT-A SportsCar");            
-        }
+        System.out.println(2 + 2);
+        System.out.println(2 + 2.4);
+        System.out.println(2 + "om");
+        System.out.println(3.1f + 5.9);
     }    
 }

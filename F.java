@@ -1,26 +1,16 @@
 class F {
+    // Legal Method Overloading (Parameter-Body Must Mismatch by Count)
+    void pro(int y) {
+        System.out.println("Anshul Shivedi");
+    }
+
+    void pro(int y, int z) {
+        System.out.println("manu bhardwaj");
+    }    
+
     public static void main(String[] args) {
-        Integer c = new Integer(14);
-        Long d = new Long(15);
-        Float e = new Float(16);
-        
-        process(c);
-        process(d);
-        process(e);
-    }   
-    
-    static void process(Integer var) {
-        System.out.println("process(Integer)");
-        //some numeric operations...
-    }
-    
-    static void process(Float var) {
-        System.out.println("process(Float)");
-        //some numeric operations...
-    }
-    
-    static void process(Long var) {
-        System.out.println("process(Long)");
-        //some numeric operations...
+        F obj = new F();
+        obj.pro(10);         // calls pro(int)
+        obj.pro(10, 20);     // calls pro(int, int)
     }
 }

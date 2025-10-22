@@ -1,18 +1,15 @@
-class B1 {
-    void pro() {
-        System.out.println("pro() in Parent class B1");
-    }
-}
-
-class B extends B1 {
-    // method overloading (different parameter list)
+class B {
     void pro(int x) {
-        System.out.println("pro(int x) in Child class B");
+        System.out.println("Integer: " + x);
+    }
+
+    void pro(double x) {
+        System.out.println("Double: " + x);
     }
 
     public static void main(String[] args) {
         B obj = new B();
-        obj.pro();      // calls parent class method
-        obj.pro(10);    // calls overloaded method in child
+        obj.pro(10);       // calls int version
+        obj.pro(5.5);      // calls double version
     }
 }

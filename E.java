@@ -1,37 +1,16 @@
-// Base class
-class SuperHuman {
-    // common properties or methods can be added here
-}
-
-// Subclasses
-class SpiderMan extends SuperHuman {
-}
-
-class ShaktiMan extends SuperHuman {
-}
-
-class SuperMan extends SuperHuman {
-}
-
-// Main class renamed to E
 class E {
-    static void inviteForLunch(SuperHuman a) {
-        System.out.println("---- step-1");
-        System.out.println("---- step-2");
-        System.out.println("---- step-3");
-        System.out.println("---- step-4");
-        System.out.println("---- step-5");
-        System.out.println("**********************");
+    // Legal Method Overloading (Parameter-Body Must Mismatch: Sequence)
+    void pro(int y, float z) {
+        System.out.println("Namaskar");
     }
 
-    public static void main(String[] args) {
-        SpiderMan x = new SpiderMan();
-        inviteForLunch(x);
-
-        ShaktiMan y = new ShaktiMan();
-        inviteForLunch(y);
-
-        SuperMan z = new SuperMan();
-        inviteForLunch(z);
+    void pro(float y, int z) {
+        System.out.println("Namaste");
     }    
+
+    public static void main(String[] args) {
+        E obj = new E();
+        obj.pro(10, 5.5f);    // calls pro(int, float)
+        obj.pro(5.5f, 10);    // calls pro(float, int)
+    }
 }

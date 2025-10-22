@@ -1,19 +1,16 @@
-class D1 {
-    void pro(int a, float b) {
-        System.out.println("pro(int, float) in Parent class D1");
+class D {
+    // Legal Method Overloading (Parameter-Body Must Mismatch by Type)
+    void pro(int y) {
+        System.out.println("Hello");
     }
-}
 
-class D extends D1 {
-    // method overloading (different parameter sequence)
-    void pro(float a, int b) {
-        System.out.println("pro(float, int) in Child class D");
-    }
+    void pro(byte y) {
+        System.out.println("Hi");
+    }    
 
     public static void main(String[] args) {
         D obj = new D();
-
-        obj.pro(10, 2.5f);   // calls pro(int, float)
-        obj.pro(3.5f, 20);   // calls pro(float, int)
+        obj.pro(10);        // calls pro(int y)
+        obj.pro((byte)10);  // calls pro(byte y)
     }
 }

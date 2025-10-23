@@ -1,16 +1,18 @@
+class Car { }
+class SportsCar extends Car { }
+
 class E {
-    // Legal Method Overloading (Parameter-Body Must Mismatch: Sequence)
-    void pro(int y, float z) {
-        System.out.println("Namaskar");
+    static void pro(SportsCar w) {
+        System.out.println("SportsCar");
     }
 
-    void pro(float y, int z) {
-        System.out.println("Namaste");
-    }    
-
+    static void pro(Car w) {
+        System.out.println("Car");
+    }
+    
     public static void main(String[] args) {
-        E obj = new E();
-        obj.pro(10, 5.5f);    // calls pro(int, float)
-        obj.pro(5.5f, 10);    // calls pro(float, int)
+        Car z = new SportsCar();
+
+        pro(z);
     }
 }

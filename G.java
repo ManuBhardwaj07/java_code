@@ -1,22 +1,26 @@
-class G1 {
-    static void pro() {
-        System.out.println("Yamraj");
+// Define the Student1 class
+class Student1 {
+    String name;
+    int age;
+    String college;
+
+    // Parameterized constructor
+    Student1(String name, int age, String college) {
+        this.name = name;
+        this.age = age;
+        this.college = college;
     }
 }
 
-class G extends G1 {
-    static void pro() {
-        System.out.println("Dharamraj");
-    }
-    
+// Main class
+class G {
     public static void main(String[] args) {
-        // G1 x = new G1();
-        // x.pro();
+        // Create Student1 object with values
+        Student1 x = new Student1("Manu Bhardwaj", 19, "BGIEM");
 
-        // G x = new G();
-        // x.pro();
-
-        G1 x = new G();
-        x.pro();
+        // Print the values
+        System.out.println(x.name);
+        System.out.println(x.age);
+        System.out.println(x.college);
     }    
 }

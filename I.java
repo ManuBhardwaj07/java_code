@@ -1,20 +1,26 @@
-class I1 {
-    float pro() {
-        System.out.println("pro() in Parent class I1");
-        return 8.9f;
-    }    
+// Define the Student2 class
+class Student2 {
+    String name;
+    int age;
+    String college;
+
+    // Parameterized constructor
+    Student2(String name, int age, String college) {
+        this.name = name;
+        this.age = age;
+        this.college = college;
+    }
 }
 
-class I extends I1 {
-    // legal method overriding
-    float pro() {
-        System.out.println("pro() in Child class I");
-        return 1.1f;
-    }
-
+// Main class
+class I {
     public static void main(String[] args) {
-        I obj = new I();
-        float result = obj.pro();  // calls overridden method in child
-        System.out.println("Returned value: " + result);
-    }
+        // Create Student2 object
+        Student2 x = new Student2("Sarvesh Sinha", 21, "HECT");
+
+        // Print details
+        System.out.println(x.name);
+        System.out.println(x.age);
+        System.out.println(x.college);
+    }    
 }

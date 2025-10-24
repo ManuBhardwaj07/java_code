@@ -1,4 +1,6 @@
-// Student class
+import java.util.Scanner;
+
+// Define the Student class
 class Student {
     String name;
     int age;
@@ -11,20 +13,27 @@ class Student {
 }
 
 // Main class
-class F {
+class F1 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
         Student x = new Student();
 
-        // Access default values
+        // Print default values
         System.out.println(x.name);
         System.out.println(x.age);
 
-        // Modify values
-        x.name = "Yamraj";
-        x.age = 1000;        
+        // Take input from user
+        System.out.print("Enter your name: ");
+        x.name = sc.nextLine();
 
+        System.out.print("Enter your age: ");
+        x.age = sc.nextInt();        
+        
         // Print updated values
         System.out.println(x.name);
         System.out.println(x.age);
+        
+        sc.close();
     }    
 }

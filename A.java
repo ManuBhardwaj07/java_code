@@ -1,15 +1,24 @@
-class X1 {
-    int x = 12;
-}
-
-class X extends X1 {
-    int x = 45;
-}
-
 class A {
-    public static void main(String[] args) {
-        X1 t = new X();
+    // Instance variable
+    String abc;
 
-        System.out.println(t.x);
+    // Constructor
+    A() {
+        abc = "Hello, I am abc!";
+    }
+
+    // Method
+    void mno() {
+        System.out.println("mno() method called");
+    }
+
+    public static void main(String[] args) {
+        A x = new A();
+
+        // Accessing instance variable
+        System.out.println(x.abc);
+
+        // Calling method
+        x.mno();
     }
 }

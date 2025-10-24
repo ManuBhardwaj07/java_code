@@ -1,18 +1,14 @@
-class Car { }
-class SportsCar extends Car { }
-
 class E {
-    static void pro(SportsCar w) {
-        System.out.println("SportsCar");
-    }
-
-    static void pro(Car w) {
-        System.out.println("Car");
-    }
+    E() {
+        // the constructor code will run, whenever you create an object of class E
+        System.out.println("Hi");
+    } 
     
     public static void main(String[] args) {
-        Car z = new SportsCar();
-
-        pro(z);
+        System.out.println("----------- 1");
+        E a = new E();
+        E b = new E();
+        E c = new E();
+        System.out.println("----------- 2");
     }
 }

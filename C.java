@@ -1,19 +1,21 @@
-class Z1 {
-    void pro() {
-        System.out.println("Hi");
-    }
-}
-
-class Z extends Z1 {
-    void pro() {
-        System.out.println("Hello");
-    }
-}
+import java.util.Scanner;
 
 class C {
     public static void main(String[] args) {
-        Z1 x = new Z();
+        Scanner sc = new Scanner(System.in);
 
-        x.pro();
-    }        
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+        
+        sc.nextLine();
+
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.println(" --------------------- ");
+        System.out.println(age);
+        System.out.println(name);
+
+        sc.close();
+    }
 }

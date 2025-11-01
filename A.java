@@ -1,24 +1,24 @@
+import java.util.Scanner;
+
 class A {
-    // Instance variable
-    String abc;
-
-    // Constructor
-    A() {
-        abc = "Hello, I am abc!";
-    }
-
-    // Method
-    void mno() {
-        System.out.println("mno() method called");
-    }
-
     public static void main(String[] args) {
-        A x = new A();
+        Scanner sc = new Scanner(System.in);
+        int age = 0;
 
-        // Accessing instance variable
-        System.out.println(x.abc);
+        System.out.print("Enter your age: ");
 
-        // Calling method
-        x.mno();
+        // Check if input is an integer
+        if (sc.hasNextInt()) {
+            age = sc.nextInt();
+        } else {
+            System.out.println("Invalid input! Please enter a number.");
+            sc.close();
+            return; // exit program
+        }
+
+        System.out.println(" --------------------- ");
+        System.out.println("Age: " + age);
+
+        sc.close();
     }
 }

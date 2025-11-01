@@ -1,19 +1,13 @@
-class T1 {
-    static void info() {
-        System.out.println("Namaste");
-    }
-}
-
-class T extends T1 {
-    static void info() {
-        System.out.println("Namaskar");
-    }
-}
+import java.io.Console;
 
 class D {
     public static void main(String[] args) {
-        T1 h = new T();
+        System.out.print("Enter your name: ");
 
-        h.info();
-    }    
+        Console c = System.console();
+
+        String name = c.readLine();
+
+        System.out.println("My Name Is: " + name);
+    }
 }
